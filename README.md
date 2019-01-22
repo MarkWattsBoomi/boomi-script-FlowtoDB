@@ -15,14 +15,14 @@ You need to set "Dynamic Process Properties" in boomi for the operational parame
 
 Do this by first creating a Process Properties component and giving it these attributes: -
 
-DatabaseDriverClass - The java class name of the driver to use e.g. org.postgresql.Driver for postgres
-UserName            - The user name for the connection authentication
-Password            - The password for the user name
-Protocol            - The protocol element of the jdbc connection string e.g. jdbc:postgresql://
-Host                - The URI of the database e.g. ec2-54-xxx-246-59.eu-west-1.compute.amazonaws.com
-Port                - The listener port of the DB e,g, 5432 for postgres
-Database            - the name of the database
-TableName           - The table name to query against (include the schema e.g. myschem.tablename)
+- DatabaseDriverClass - The java class name of the driver to use e.g. org.postgresql.Driver for postgres
+- UserName            - The user name for the connection authentication
+- Password            - The password for the user name
+- Protocol            - The protocol element of the jdbc connection string e.g. jdbc:postgresql://
+- Host                - The URI of the database e.g. ec2-54-xxx-246-59.eu-west-1.compute.amazonaws.com
+- Port                - The listener port of the DB e,g, 5432 for postgres
+- Database            - the name of the database
+- TableName           - The table name to query against (include the schema e.g. myschem.tablename)
 
 Then in the process itself map these parameters to dynamic process properties using a "Set Properties" shape.  
 You can hard code at this stage if you prefer and not use the Process Properties component at all or mix and match.
